@@ -1,0 +1,316 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<section class="bg-gray-50 overflow-hidden">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+
+        <!-- Header -->
+        <div class="max-w-2xl mx-auto text-center mb-10 md:mb-14">
+            <!-- Flower/Leaf SVG -->
+            <div class="flex justify-center mb-3">
+                <svg class="w-10 h-10 text-green-500 opacity-25" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12,22 C12,22 4,16 4,10 C4,5.6 7.6,2 12,2 C16.4,2 20,5.6 20,10 C20,16 12,22 12,22 Z M12,4.5 C9.3,4.5 7,6.8 7,9.5 C7,13.7 12,18.4 12,18.4 C12,18.4 17,13.7 17,9.5 C17,6.8 14.7,4.5 12,4.5 Z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                Here are the latest posts from my blog that grabbed the most attention.
+            </h2>
+        </div>
+
+        <!-- Carousel Wrapper -->
+        <div class="relative mb-14">
+            <!-- Carousel Container -->
+            <div id="blog5-carousel"
+                class="flex overflow-x-auto gap-6 md:gap-8 pb-4 snap-x snap-mandatory scroll-smooth hide-scrollbar"
+                style="scrollbar-width: none; -ms-overflow-style: none;">
+                <style>
+                    .hide-scrollbar::-webkit-scrollbar {
+                        display: none;
+                    }
+                </style>
+
+                <!-- Article 1 -->
+                <article
+                    class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-21.33px)] snap-start bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                    <figure class="relative overflow-hidden group">
+                        <img src="../../assets/images/b12.jpg" alt=""
+                            class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <a href="#"
+                            class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Read More
+                            </span>
+                        </a>
+                    </figure>
+                    <div class="flex flex-col flex-grow p-6">
+                        <div class="mb-2">
+                            <a href="#"
+                                class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Wedding</a>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Ligula tristique
+                                quis risus</a>
+                        </h2>
+                        <ul class="flex items-center gap-4 text-sm text-gray-400 mt-auto">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>14 Apr 2022</span>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    </svg>
+                                    <span>4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article
+                    class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-21.33px)] snap-start bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                    <figure class="relative overflow-hidden group">
+                        <img src="../../assets/images/b13.jpg" alt=""
+                            class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <a href="#"
+                            class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Read More
+                            </span>
+                        </a>
+                    </figure>
+                    <div class="flex flex-col flex-grow p-6">
+                        <div class="mb-2">
+                            <a href="#"
+                                class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Engagement</a>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Nullam id dolor
+                                elit id nibh</a>
+                        </h2>
+                        <ul class="flex items-center gap-4 text-sm text-gray-400 mt-auto">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>29 Mar 2022</span>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    </svg>
+                                    <span>3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article
+                    class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-21.33px)] snap-start bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                    <figure class="relative overflow-hidden group">
+                        <img src="../../assets/images/b14.jpg" alt=""
+                            class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <a href="#"
+                            class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Read More
+                            </span>
+                        </a>
+                    </figure>
+                    <div class="flex flex-col flex-grow p-6">
+                        <div class="mb-2">
+                            <a href="#"
+                                class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Couples</a>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Ultricies fusce
+                                porta elit</a>
+                        </h2>
+                        <ul class="flex items-center gap-4 text-sm text-gray-400 mt-auto">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>26 Feb 2022</span>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    </svg>
+                                    <span>6</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article
+                    class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-21.33px)] snap-start bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                    <figure class="relative overflow-hidden group">
+                        <img src="../../assets/images/b15.jpg" alt=""
+                            class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <a href="#"
+                            class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Read More
+                            </span>
+                        </a>
+                    </figure>
+                    <div class="flex flex-col flex-grow p-6">
+                        <div class="mb-2">
+                            <a href="#"
+                                class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Engagement</a>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Morbi leo risus
+                                porta eget</a>
+                        </h2>
+                        <ul class="flex items-center gap-4 text-sm text-gray-400 mt-auto">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>17 Jan 2022</span>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    </svg>
+                                    <span>3</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article
+                    class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-21.33px)] snap-start bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                    <figure class="relative overflow-hidden group">
+                        <img src="../../assets/images/b16.jpg" alt=""
+                            class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <a href="#"
+                            class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Read More
+                            </span>
+                        </a>
+                    </figure>
+                    <div class="flex flex-col flex-grow p-6">
+                        <div class="mb-2">
+                            <a href="#"
+                                class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Couples</a>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Nulla vitae elit
+                                libero</a>
+                        </h2>
+                        <ul class="flex items-center gap-4 text-sm text-gray-400 mt-auto">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>7 Jan 2022</span>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    </svg>
+                                    <span>1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article
+                    class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-21.33px)] snap-start bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
+                    <figure class="relative overflow-hidden group">
+                        <img src="../../assets/images/b17.jpg" alt=""
+                            class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                        <a href="#"
+                            class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span
+                                class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Read More
+                            </span>
+                        </a>
+                    </figure>
+                    <div class="flex flex-col flex-grow p-6">
+                        <div class="mb-2">
+                            <a href="#"
+                                class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Wedding</a>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Pharetra augue elit
+                                sem</a>
+                        </h2>
+                        <ul class="flex items-center gap-4 text-sm text-gray-400 mt-auto">
+                            <li class="flex items-center gap-1.5">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                <span>2 Jan 2022</span>
+                            </li>
+                            <li class="flex items-center gap-1.5">
+                                <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                                    </svg>
+                                    <span>2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex items-center justify-center gap-3 mt-8">
+                <button onclick="document.getElementById('blog5-carousel').scrollBy({left: -320, behavior: 'smooth'})"
+                    class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button onclick="document.getElementById('blog5-carousel').scrollBy({left: 320, behavior: 'smooth'})"
+                    class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>

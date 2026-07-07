@@ -1,0 +1,216 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<section class="bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+        
+        <!-- Header -->
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight text-center mb-3">Our Journal</h2>
+        <p class="text-lg md:text-xl text-gray-500 text-center max-w-3xl mx-auto mb-10 md:mb-12">
+            Here are the latest company news from our blog that got the most attention.
+        </p>
+
+        <!-- Blog Carousel (CSS-only snap scrolling) -->
+        <div id="blog1-carousel" class="flex overflow-x-auto gap-6 md:gap-8 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <!-- CSS to hide scrollbar for webkit -->
+            <style>
+                .hide-scrollbar::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+            
+            <!-- Article 1 -->
+            <article class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] xl:w-[calc(33.333%-21.33px)] snap-start">
+                <figure class="relative rounded-xl overflow-hidden mb-5 group">
+                    <img src="../../assets/images/b4.jpg" alt="" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <a href="#" class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            Read More
+                        </span>
+                    </a>
+                </figure>
+                
+                <div class="flex flex-col flex-grow">
+                    <div class="mb-2">
+                        <a href="#" class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Coding</a>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-snug">
+                        <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Ligula tristique quis risus</a>
+                    </h3>
+                </div>
+                
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <ul class="flex items-center gap-4 text-sm text-gray-500">
+                        <li class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span>14 Apr 2022</span>
+                        </li>
+                        <li class="flex items-center gap-1.5">
+                            <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                <span>4</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] xl:w-[calc(33.333%-21.33px)] snap-start">
+                <figure class="relative rounded-xl overflow-hidden mb-5 group">
+                    <img src="../../assets/images/b5.jpg" alt="" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <a href="#" class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            Read More
+                        </span>
+                    </a>
+                </figure>
+                
+                <div class="flex flex-col flex-grow">
+                    <div class="mb-2">
+                        <a href="#" class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Workspace</a>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-snug">
+                        <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Nullam id dolor elit id nibh</a>
+                    </h3>
+                </div>
+                
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <ul class="flex items-center gap-4 text-sm text-gray-500">
+                        <li class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span>29 Mar 2022</span>
+                        </li>
+                        <li class="flex items-center gap-1.5">
+                            <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                <span>3</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] xl:w-[calc(33.333%-21.33px)] snap-start">
+                <figure class="relative rounded-xl overflow-hidden mb-5 group">
+                    <img src="../../assets/images/b6.jpg" alt="" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <a href="#" class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            Read More
+                        </span>
+                    </a>
+                </figure>
+                
+                <div class="flex flex-col flex-grow">
+                    <div class="mb-2">
+                        <a href="#" class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Meeting</a>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-snug">
+                        <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Ultricies fusce porta elit</a>
+                    </h3>
+                </div>
+                
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <ul class="flex items-center gap-4 text-sm text-gray-500">
+                        <li class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span>26 Feb 2022</span>
+                        </li>
+                        <li class="flex items-center gap-1.5">
+                            <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                <span>6</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="flex flex-col flex-none w-full sm:w-[calc(50%-12px)] xl:w-[calc(33.333%-21.33px)] snap-start">
+                <figure class="relative rounded-xl overflow-hidden mb-5 group">
+                    <img src="../../assets/images/b7.jpg" alt="" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <a href="#" class="absolute inset-0 bg-gray-900/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white font-semibold px-4 py-2 bg-white/20 rounded-full backdrop-blur-sm transform -translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            Read More
+                        </span>
+                    </a>
+                </figure>
+                
+                <div class="flex flex-col flex-grow">
+                    <div class="mb-2">
+                        <a href="#" class="text-xs font-bold uppercase tracking-widest text-blue-600 hover:text-blue-700 transition-colors">Business Tips</a>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-snug">
+                        <a href="./blog-post.html" class="hover:text-blue-600 transition-colors">Morbi leo risus porta eget</a>
+                    </h3>
+                </div>
+                
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <ul class="flex items-center gap-4 text-sm text-gray-500">
+                        <li class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <span>7 Jan 2022</span>
+                        </li>
+                        <li class="flex items-center gap-1.5">
+                            <a href="#" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                </svg>
+                                <span>2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="flex items-center justify-center gap-2.5 mt-8" id="blog1-pagination">
+            <button onclick="document.getElementById('blog1-carousel').scrollTo({left: 0, behavior: 'smooth'})" class="w-2.5 h-2.5 rounded-full border-2 border-blue-600 bg-transparent transition-all duration-300" aria-label="Page 1"></button>
+            <button onclick="document.getElementById('blog1-carousel').scrollTo({left: document.getElementById('blog1-carousel').scrollWidth, behavior: 'smooth'})" class="w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300" aria-label="Page 2"></button>
+        </div>
+
+        <script>
+            // Update active dot on scroll
+            const carousel1 = document.getElementById('blog1-carousel');
+            const pagination1 = document.getElementById('blog1-pagination');
+            const dots = pagination1.querySelectorAll('button');
+
+            carousel1.addEventListener('scroll', () => {
+                const scrollLeft = carousel1.scrollLeft;
+                const maxScroll = carousel1.scrollWidth - carousel1.clientWidth;
+                
+                // Determine active page (0 or 1) based on scroll position
+                let index = 0;
+                if (maxScroll > 0 && scrollLeft > (maxScroll / 2)) {
+                    index = 1;
+                }
+                
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.className = "w-2.5 h-2.5 rounded-full border-2 border-blue-600 bg-transparent transition-all duration-300";
+                    } else {
+                        dot.className = "w-2 h-2 rounded-full bg-gray-300 hover:bg-gray-400 transition-all duration-300";
+                    }
+                });
+            });
+        </script>
+
+    </div>
+</section>
