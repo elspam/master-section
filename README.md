@@ -64,7 +64,6 @@ Master-Section/
 3. Rapikan HTML, pastikan semantic
 4. Simpan di `sections/[nama-section]/`
 5. Test di browser
-6. Jika sudah oke → konversi ke Blade, simpan di `blade/[nama-section]/`
 
 ---
 
