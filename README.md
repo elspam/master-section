@@ -1,16 +1,10 @@
 # Master Section Library
 
-Kumpulan section UI yang dikonversi dari Bootstrap → Tailwind CSS, siap untuk diintegrasikan ke dalam CMS sebagai Blade component.
-
----
 
 ## Tech Stack
 
 - **HTML5** (semantic)
 - **Tailwind CSS** (via CDN)
-- ❌ Tanpa Bootstrap
-- ❌ Tanpa CSS global / inline style
-
 ---
 
 ## Struktur Folder
