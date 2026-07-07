@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Classic – Sandbox Tailwind Conversion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Unicons for social icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+</head>
+
+<body class="bg-gray-100 min-h-screen font-sans antialiased">
+
+  <!-- Main Navigation -->
+  <nav class="relative w-full z-[1000] py-4 bg-transparent">
+    <div class="container mx-auto px-4 max-w-[1320px] flex lg:flex-row flex-nowrap items-center justify-between">
+      
+      <!-- Brand / Logo -->
+      <div class="flex-shrink-0">
+        <a href="../../index.html" class="inline-block">
+          <img src="../../assets/images/logo-dark.png" srcset="../../assets/images/logo-dark.png 2x" alt="Logo" class="h-[26px] w-auto" />
+        </a>
+      </div>
+
+      <!-- Offcanvas / Navigation Collapse -->
+      <div class="navbar-collapse offcanvas fixed top-0 bottom-0 -left-full z-[1045] w-[290px] max-w-full bg-[#1e222b] lg:bg-transparent text-white lg:text-inherit flex flex-col transition-all duration-300 ease-in-out lg:static lg:translate-x-0 lg:w-auto lg:flex-row lg:items-center lg:z-auto lg:ml-auto">
+        
+        <!-- Offcanvas Header (Mobile only) -->
+        <div class="flex items-center justify-between p-6 lg:hidden border-b border-gray-800">
+          <a href="../../index.html">
+            <img src="../../assets/images/logo-light.png" srcset="../../assets/images/logo-light@2x.png 2x" alt="Logo Light" class="h-[26px] w-auto" />
+          </a>
+          <button type="button" class="btn-close text-white hover:text-gray-300 focus:outline-none" aria-label="Close">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Offcanvas Body -->
+        <div class="flex-grow overflow-y-auto lg:overflow-visible p-6 lg:p-0 flex flex-col lg:flex-row lg:items-center">
+          <ul class="flex flex-col lg:flex-row lg:items-center list-none p-0 m-0 gap-y-2 lg:gap-x-1">
+            
+            <!-- Simple Link -->
+            <li class="relative">
+              <a class="block py-2 lg:py-0 px-3 text-[15px] font-bold text-gray-300 lg:text-[#343f52] hover:text-[#3f78e0] transition duration-200" href="#">Link</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="relative group">
+              <a class="dropdown-toggle flex items-center justify-between py-2 lg:py-0 px-3 text-[15px] font-bold text-gray-300 lg:text-[#343f52] hover:text-[#3f78e0] transition duration-200 cursor-pointer" href="#" data-bs-toggle="dropdown">
+                Dropdown
+                <svg class="w-3.5 h-3.5 ml-1 transition-transform duration-200 lg:group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu hidden lg:absolute lg:block lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-200 bg-[#2a303c] lg:bg-white border border-gray-800 lg:border-gray-100 rounded-md shadow-lg py-2 mt-2 w-48 left-0 top-full">
+                <li>
+                  <a class="block px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150" href="#">Action</a>
+                </li>
+                
+                <!-- Submenu Level 2 -->
+                <li class="relative group/sub">
+                  <a class="dropdown-toggle flex items-center justify-between px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150 cursor-pointer" href="#" data-bs-toggle="dropdown">
+                    Dropdown
+                    <svg class="w-3 h-3 ml-1 lg:ml-auto lg:-rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu hidden lg:absolute lg:block lg:opacity-0 lg:invisible lg:group-hover/sub:opacity-100 lg:group-hover/sub:visible transition-all duration-200 bg-[#2a303c] lg:bg-white border border-gray-800 lg:border-gray-100 rounded-md shadow-lg py-2 mt-2 lg:mt-0 w-48 left-0 lg:left-full lg:top-0">
+                    
+                    <!-- Submenu Level 3 -->
+                    <li class="relative group/sub2">
+                      <a class="dropdown-toggle flex items-center justify-between px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150 cursor-pointer" href="#" data-bs-toggle="dropdown">
+                        Dropdown
+                        <svg class="w-3 h-3 ml-1 lg:ml-auto lg:-rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu hidden lg:absolute lg:block lg:opacity-0 lg:invisible lg:group-hover/sub2:opacity-100 lg:group-hover/sub2:visible transition-all duration-200 bg-[#2a303c] lg:bg-white border border-gray-800 lg:border-gray-100 rounded-md shadow-lg py-2 mt-2 lg:mt-0 w-48 left-0 lg:left-full lg:top-0">
+                        <li><a class="block px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150" href="#">Action</a></li>
+                        <li><a class="block px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150" href="#">Another Action</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="block px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150" href="#">Action</a></li>
+                    <li><a class="block px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150" href="#">Another Action</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="block px-5 py-2 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] hover:bg-gray-800 lg:hover:bg-gray-50 transition duration-150" href="#">Another Action</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Mega Menu -->
+            <li class="relative group">
+              <a class="dropdown-toggle flex items-center justify-between py-2 lg:py-0 px-3 text-[15px] font-bold text-gray-300 lg:text-[#343f52] hover:text-[#3f78e0] transition duration-200 cursor-pointer" href="#" data-bs-toggle="dropdown">
+                Mega Menu
+                <svg class="w-3.5 h-3.5 ml-1 transition-transform duration-200 lg:group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu mega-menu hidden lg:absolute lg:block lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-200 bg-[#2a303c] lg:bg-white border border-gray-800 lg:border-gray-100 rounded-md shadow-lg p-6 mt-2 w-full lg:w-[600px] left-0 lg:-left-40 top-full">
+                <li class="mega-menu-content">
+                  <div class="flex flex-wrap -mx-3">
+                    
+                    <!-- col-lg-6 -->
+                    <div class="w-full lg:w-1/2 px-3 mb-4 lg:mb-0">
+                      <h6 class="text-[12px] font-bold tracking-wider text-gray-500 uppercase mb-2">One</h6>
+                      <div class="flex flex-wrap -mx-3">
+                        <div class="w-1/2 px-3">
+                          <ul class="list-none p-0 m-0">
+                            <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                            <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                            <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                          </ul>
+                        </div>
+                        <div class="w-1/2 px-3">
+                          <ul class="list-none p-0 m-0">
+                            <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                            <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                            <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- col-lg-3 -->
+                    <div class="w-full lg:w-1/4 px-3 mb-4 lg:mb-0 lg:border-l lg:border-gray-100">
+                      <h6 class="text-[12px] font-bold tracking-wider text-gray-500 uppercase mb-2">Two</h6>
+                      <ul class="list-none p-0 m-0">
+                        <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                        <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                        <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- col-lg-3 -->
+                    <div class="w-full lg:w-1/4 px-3 lg:border-l lg:border-gray-100">
+                      <h6 class="text-[12px] font-bold tracking-wider text-gray-500 uppercase mb-2">Three</h6>
+                      <ul class="list-none p-0 m-0">
+                        <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                        <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                        <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Dropdown Large -->
+            <li class="relative group">
+              <a class="dropdown-toggle flex items-center justify-between py-2 lg:py-0 px-3 text-[15px] font-bold text-gray-300 lg:text-[#343f52] hover:text-[#3f78e0] transition duration-200 cursor-pointer" href="#" data-bs-toggle="dropdown">
+                Dropdown Large
+                <svg class="w-3.5 h-3.5 ml-1 transition-transform duration-200 lg:group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+              <div class="dropdown-menu dropdown-lg hidden lg:absolute lg:block lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible transition-all duration-200 bg-[#2a303c] lg:bg-white border border-gray-800 lg:border-gray-100 rounded-md shadow-lg p-6 mt-2 w-full lg:w-[380px] left-0 top-full">
+                <div class="flex flex-wrap -mx-3">
+                  <div class="w-1/2 px-3">
+                    <h6 class="text-[12px] font-bold tracking-wider text-gray-500 uppercase mb-2">One</h6>
+                    <ul class="list-none p-0 m-0">
+                      <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                      <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                      <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Another Link</a></li>
+                    </ul>
+                  </div>
+                  <div class="w-1/2 px-3 lg:border-l lg:border-gray-100">
+                    <h6 class="text-[12px] font-bold tracking-wider text-gray-500 uppercase mb-2">Two</h6>
+                    <ul class="list-none p-0 m-0">
+                      <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                      <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Link</a></li>
+                      <li><a class="block py-1 text-[14px] text-gray-400 lg:text-[#60697b] hover:text-[#3f78e0] transition duration-150" href="#">Another Link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+          
+          <!-- Mobile Contact & Social info -->
+          <div class="lg:hidden mt-auto pt-8 pb-4">
+            <div class="mb-4">
+              <a href="#" class="btn-signin block text-center text-[13px] font-bold text-white bg-[#3f78e0] hover:bg-[#2c65cc] rounded-full px-5 py-2.5 transition duration-200">Sign In</a>
+            </div>
+            <a href="mailto:first.last@email.com" class="block text-gray-300 hover:text-[#3f78e0] mb-2">info@email.com</a>
+            <p class="text-gray-400 mb-4">00 (123) 456 78 90</p>
+            <nav class="flex items-center gap-3">
+              <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-facebook-f"></i></a>
+              <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-dribbble"></i></a>
+              <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-instagram"></i></a>
+              <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-youtube"></i></a>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Menu (Info Toggle, Sign In Modal Toggle, Hamburger) -->
+      <div class="flex items-center gap-x-3 lg:ml-6">
+        <ul class="flex items-center list-none p-0 m-0 gap-x-3">
+          
+          <!-- Info Icon (toggles offcanvas-info) -->
+          <li>
+            <a class="info-toggle text-[#343f52] hover:text-[#3f78e0] cursor-pointer text-lg" aria-label="Info">
+              <i class="uil uil-info-circle"></i>
+            </a>
+          </li>
+
+          <!-- Sign In Button (desktop only) -->
+          <li class="hidden md:block">
+            <a href="#" class="btn-signin inline-block text-[13px] font-bold text-white bg-[#3f78e0] hover:bg-[#2c65cc] rounded-full px-5 py-2 transition duration-200">Sign In</a>
+          </li>
+
+          <!-- Mobile Hamburger -->
+          <li class="lg:hidden">
+            <button class="hamburger p-2 text-[#343f52] hover:text-[#3f78e0] focus:outline-none" aria-label="Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+    
+    <!-- Mobile Offcanvas Backdrop -->
+    <div class="offcanvas-backdrop fixed inset-0 bg-black/50 z-[1040] hidden lg:hidden"></div>
+  </nav>
+
+  <!-- Info Offcanvas (Right Drawer) -->
+  <div id="offcanvas-info" class="fixed top-0 bottom-0 right-0 z-[1045] w-[290px] max-w-full bg-[#1e222b] text-white flex flex-col transition-all duration-300 ease-in-out translate-x-full">
+    <!-- Offcanvas Header -->
+    <div class="flex items-center justify-between p-6 border-b border-gray-800">
+      <a href="../../index.html">
+        <img src="../../assets/images/logo-light.png" srcset="../../assets/images/logo-light@2x.png 2x" alt="Logo Light" class="h-[26px] w-auto" />
+      </a>
+      <button type="button" class="btn-close-info text-white hover:text-gray-300 focus:outline-none" aria-label="Close">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <!-- Offcanvas Body -->
+    <div class="flex-grow overflow-y-auto p-6">
+      <div class="mb-8">
+        <p class="text-gray-300 text-[14px]">Sandbox is a multipurpose HTML5 template with various layouts which will be a great solution for your business.</p>
+      </div>
+      <div class="mb-8">
+        <h4 class="text-white font-bold text-base mb-3">Contact Info</h4>
+        <address class="text-gray-300 not-italic text-[14px] leading-relaxed">
+          Moonshine St. 14/05 <br /> Light City, London
+        </address>
+        <a href="mailto:first.last@email.com" class="text-gray-300 hover:text-[#3f78e0] text-[14px] mt-2 block">info@email.com</a>
+        <p class="text-gray-300 text-[14px] mt-1">00 (123) 456 78 90</p>
+      </div>
+      <div class="mb-8">
+        <h4 class="text-white font-bold text-base mb-3">Learn More</h4>
+        <ul class="list-none p-0 m-0 space-y-2">
+          <li><a href="#" class="text-gray-300 hover:text-[#3f78e0] text-[14px]">Our Story</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-[#3f78e0] text-[14px]">Terms of Use</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-[#3f78e0] text-[14px]">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-300 hover:text-[#3f78e0] text-[14px]">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-base mb-3">Follow Us</h4>
+        <nav class="flex items-center gap-3">
+          <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-facebook-f"></i></a>
+          <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-dribbble"></i></a>
+          <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-instagram"></i></a>
+          <a href="#" class="text-gray-400 hover:text-[#3f78e0] text-lg"><i class="uil uil-youtube"></i></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="modal-signin" class="fixed inset-0 z-[1050] flex items-center justify-center bg-black/50 px-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white rounded-xl shadow-2xl w-full max-w-[400px] p-8 relative transform scale-95 transition-all duration-300">
+      <button type="button" class="modal-close absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <h2 class="text-2xl font-bold text-[#343f52] mb-3">Welcome Back</h2>
+      <p class="text-[#60697b] text-[15px] mb-6">Fill your email and password to sign in.</p>
+      <form class="mb-4">
+        <div class="relative mb-4">
+          <input type="email" id="loginEmail" placeholder=" " class="peer block w-full px-4 pt-6 pb-2 text-[14px] text-gray-900 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3f78e0]/20 focus:border-[#3f78e0] transition-colors placeholder-transparent" />
+          <label for="loginEmail" class="absolute left-4 top-2 text-gray-400 text-[12px] transition-all peer-placeholder-shown:text-[14px] peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[12px] peer-focus:text-[#3f78e0] cursor-text">Email</label>
+        </div>
+        <div class="relative mb-4">
+          <input type="password" id="loginPassword" placeholder=" " class="peer block w-full px-4 pt-6 pb-2 text-[14px] text-gray-900 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3f78e0]/20 focus:border-[#3f78e0] transition-colors placeholder-transparent" />
+          <label for="loginPassword" class="absolute left-4 top-2 text-gray-400 text-[12px] transition-all peer-placeholder-shown:text-[14px] peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[12px] peer-focus:text-[#3f78e0] cursor-text">Password</label>
+          <span class="password-toggle absolute right-4 top-[55%] -translate-y-1/2 text-gray-400 hover:text-[#3f78e0] cursor-pointer text-lg"><i class="uil uil-eye"></i></span>
+        </div>
+        <button type="submit" class="block w-full py-3 text-[14px] font-bold text-white bg-[#3f78e0] hover:bg-[#2c65cc] rounded-full transition duration-200 text-center">Sign In</button>
+      </form>
+      <p class="mb-2 text-center text-[14px]"><a href="#" class="text-[#3f78e0] hover:text-[#2c65cc] transition">Forgot Password?</a></p>
+      <p class="text-center text-[14px] text-[#60697b]">Don't have an account? <a href="#" class="to-signup text-[#3f78e0] hover:text-[#2c65cc] transition font-bold">Sign up</a></p>
+      <div class="relative flex py-4 items-center">
+        <div class="flex-grow border-t border-gray-200"></div>
+        <span class="flex-shrink mx-4 text-gray-400 text-[12px] uppercase">or</span>
+        <div class="flex-grow border-t border-gray-200"></div>
+      </div>
+      <nav class="flex justify-center gap-3">
+        <a href="#" class="w-10 h-10 rounded-full bg-[#e8eef9] hover:bg-[#d6e2f5] text-[#3f78e0] flex items-center justify-center text-lg transition"><i class="uil uil-google"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-[#e8eef9] hover:bg-[#d6e2f5] text-[#3f78e0] flex items-center justify-center text-lg transition"><i class="uil uil-facebook-f"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-[#e8eef9] hover:bg-[#d6e2f5] text-[#3f78e0] flex items-center justify-center text-lg transition"><i class="uil uil-twitter"></i></a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="modal-signup" class="fixed inset-0 z-[1050] flex items-center justify-center bg-black/50 px-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-white rounded-xl shadow-2xl w-full max-w-[400px] p-8 relative transform scale-95 transition-all duration-300">
+      <button type="button" class="modal-close absolute top-4 right-4 text-gray-400 hover:text-gray-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <h2 class="text-2xl font-bold text-[#343f52] mb-3">Sign up to Sandbox</h2>
+      <p class="text-[#60697b] text-[15px] mb-6">Registration takes less than a minute.</p>
+      <form class="mb-4">
+        <div class="relative mb-4">
+          <input type="text" id="registerName" placeholder=" " class="peer block w-full px-4 pt-6 pb-2 text-[14px] text-gray-900 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3f78e0]/20 focus:border-[#3f78e0] transition-colors placeholder-transparent" />
+          <label for="registerName" class="absolute left-4 top-2 text-gray-400 text-[12px] transition-all peer-placeholder-shown:text-[14px] peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[12px] peer-focus:text-[#3f78e0] cursor-text">Name</label>
+        </div>
+        <div class="relative mb-4">
+          <input type="email" id="registerEmail" placeholder=" " class="peer block w-full px-4 pt-6 pb-2 text-[14px] text-gray-900 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3f78e0]/20 focus:border-[#3f78e0] transition-colors placeholder-transparent" />
+          <label for="registerEmail" class="absolute left-4 top-2 text-gray-400 text-[12px] transition-all peer-placeholder-shown:text-[14px] peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[12px] peer-focus:text-[#3f78e0] cursor-text">Email</label>
+        </div>
+        <div class="relative mb-4">
+          <input type="password" id="registerPassword" placeholder=" " class="peer block w-full px-4 pt-6 pb-2 text-[14px] text-gray-900 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3f78e0]/20 focus:border-[#3f78e0] transition-colors placeholder-transparent" />
+          <label for="registerPassword" class="absolute left-4 top-2 text-gray-400 text-[12px] transition-all peer-placeholder-shown:text-[14px] peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[12px] peer-focus:text-[#3f78e0] cursor-text">Password</label>
+          <span class="password-toggle absolute right-4 top-[55%] -translate-y-1/2 text-gray-400 hover:text-[#3f78e0] cursor-pointer text-lg"><i class="uil uil-eye"></i></span>
+        </div>
+        <div class="relative mb-4">
+          <input type="password" id="registerPasswordConfirm" placeholder=" " class="peer block w-full px-4 pt-6 pb-2 text-[14px] text-gray-900 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#3f78e0]/20 focus:border-[#3f78e0] transition-colors placeholder-transparent" />
+          <label for="registerPasswordConfirm" class="absolute left-4 top-2 text-gray-400 text-[12px] transition-all peer-placeholder-shown:text-[14px] peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[12px] peer-focus:text-[#3f78e0] cursor-text">Confirm Password</label>
+          <span class="password-toggle absolute right-4 top-[55%] -translate-y-1/2 text-gray-400 hover:text-[#3f78e0] cursor-pointer text-lg"><i class="uil uil-eye"></i></span>
+        </div>
+        <button type="submit" class="block w-full py-3 text-[14px] font-bold text-white bg-[#3f78e0] hover:bg-[#2c65cc] rounded-full transition duration-200 text-center">Sign Up</button>
+      </form>
+      <p class="text-center text-[14px] text-[#60697b]">Already have an account? <a href="#" class="to-signin text-[#3f78e0] hover:text-[#2c65cc] transition font-bold">Sign in</a></p>
+      <div class="relative flex py-4 items-center">
+        <div class="flex-grow border-t border-gray-200"></div>
+        <span class="flex-shrink mx-4 text-gray-400 text-[12px] uppercase">or</span>
+        <div class="flex-grow border-t border-gray-200"></div>
+      </div>
+      <nav class="flex justify-center gap-3">
+        <a href="#" class="w-10 h-10 rounded-full bg-[#e8eef9] hover:bg-[#d6e2f5] text-[#3f78e0] flex items-center justify-center text-lg transition"><i class="uil uil-google"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-[#e8eef9] hover:bg-[#d6e2f5] text-[#3f78e0] flex items-center justify-center text-lg transition"><i class="uil uil-facebook-f"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full bg-[#e8eef9] hover:bg-[#d6e2f5] text-[#3f78e0] flex items-center justify-center text-lg transition"><i class="uil uil-twitter"></i></a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Vanilla JS controls -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Offcanvas variables (Mobile menu)
+      const hamburger = document.querySelector('.hamburger');
+      const closeBtn = document.querySelector('.btn-close');
+      const offcanvas = document.querySelector('.offcanvas');
+      const backdrop = document.querySelector('.offcanvas-backdrop');
+
+      // Info Offcanvas variables (Right sidebar)
+      const infoToggle = document.querySelector('.info-toggle');
+      const closeInfoBtn = document.querySelector('.btn-close-info');
+      const offcanvasInfo = document.getElementById('offcanvas-info');
+
+      // Modal variables
+      const signInBtns = document.querySelectorAll('.btn-signin');
+      const modalSignIn = document.getElementById('modal-signin');
+      const modalSignUp = document.getElementById('modal-signup');
+      const toSignUpBtn = document.querySelector('.to-signup');
+      const toSignInBtn = document.querySelector('.to-signin');
+      const modalCloses = document.querySelectorAll('.modal-close');
+
+      // Helper function to open offcanvas
+      function openOffcanvas(el) {
+        el.classList.remove('-left-full', 'translate-x-full');
+        if (el === offcanvas) el.classList.add('left-0');
+        if (el === offcanvasInfo) el.classList.add('translate-x-0');
+        backdrop.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+
+      // Helper function to close offcanvas
+      function closeOffcanvas() {
+        offcanvas.classList.remove('left-0');
+        offcanvas.classList.add('-left-full');
+        offcanvasInfo.classList.remove('translate-x-0');
+        offcanvasInfo.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+
+      // Helper function to open modal
+      function openModal(modal) {
+        modal.classList.remove('pointer-events-none', 'opacity-0');
+        modal.classList.add('opacity-100');
+        const card = modal.querySelector('div');
+        if (card) {
+          card.classList.remove('scale-95', 'opacity-0');
+          card.classList.add('scale-100', 'opacity-100');
+        }
+        document.body.style.overflow = 'hidden';
+      }
+
+      // Helper function to close modal
+      function closeModal(modal) {
+        modal.classList.add('pointer-events-none', 'opacity-0');
+        modal.classList.remove('opacity-100');
+        const card = modal.querySelector('div');
+        if (card) {
+          card.classList.add('scale-95', 'opacity-0');
+          card.classList.remove('scale-100', 'opacity-100');
+        }
+        // Only restore scroll if no other overlay is open
+        if (!modalSignIn.classList.contains('opacity-100') && 
+            !modalSignUp.classList.contains('opacity-100') && 
+            !offcanvas.classList.contains('left-0') && 
+            !offcanvasInfo.classList.contains('translate-x-0')) {
+          document.body.style.overflow = '';
+        }
+      }
+
+      // Offcanvas events
+      if (hamburger) hamburger.addEventListener('click', () => openOffcanvas(offcanvas));
+      if (closeBtn) closeBtn.addEventListener('click', closeOffcanvas);
+      if (infoToggle) infoToggle.addEventListener('click', () => openOffcanvas(offcanvasInfo));
+      if (closeInfoBtn) closeInfoBtn.addEventListener('click', closeOffcanvas);
+      if (backdrop) backdrop.addEventListener('click', closeOffcanvas);
+
+      // Modal events
+      signInBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeOffcanvas();
+          openModal(modalSignIn);
+        });
+      });
+
+      if (toSignUpBtn) {
+        toSignUpBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeModal(modalSignIn);
+          setTimeout(() => openModal(modalSignUp), 150);
+        });
+      }
+
+      if (toSignInBtn) {
+        toSignInBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          closeModal(modalSignUp);
+          setTimeout(() => openModal(modalSignIn), 150);
+        });
+      }
+
+      modalCloses.forEach(btn => {
+        btn.addEventListener('click', () => {
+          closeModal(modalSignIn);
+          closeModal(modalSignUp);
+        });
+      });
+
+      [modalSignIn, modalSignUp].forEach(modal => {
+        if (modal) {
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              closeModal(modal);
+            }
+          });
+        }
+      });
+
+      // Password toggle events
+      const passwordToggles = document.querySelectorAll('.password-toggle');
+      passwordToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          const input = this.previousElementSibling;
+          const icon = this.querySelector('i');
+          if (input.type === 'password') {
+            input.type = 'text';
+            icon.classList.remove('uil-eye');
+            icon.classList.add('uil-eye-slash');
+          } else {
+            input.type = 'password';
+            icon.classList.remove('uil-eye-slash');
+            icon.classList.add('uil-eye');
+          }
+        });
+      });
+
+      // Accordion dropdowns on mobile viewports (< 1024px)
+      const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+      dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+          if (window.innerWidth < 1024) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const nextEl = this.nextElementSibling;
+            if (nextEl && nextEl.classList.contains('dropdown-menu')) {
+              const isHidden = nextEl.classList.contains('hidden');
+              
+              // Toggle classes
+              if (isHidden) {
+                nextEl.classList.remove('hidden');
+                nextEl.classList.add('block');
+              } else {
+                nextEl.classList.remove('block');
+                nextEl.classList.add('hidden');
+              }
+            }
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
