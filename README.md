@@ -8,8 +8,7 @@ Kumpulan section UI yang dikonversi dari Bootstrap → Tailwind CSS, siap untuk 
 
 - **HTML5** (semantic)
 - **Tailwind CSS** (via CDN)
-- ❌ Tanpa Bootstrap
-- ❌ Tanpa CSS global / inline style
+
 
 ---
 
@@ -44,8 +43,6 @@ Master-Section/
 │   ├── team/
 │   └── testimonials/
 │
-├── blade/                  → Hasil konversi ke Blade (Laravel)
-│   └── [sama dengan sections/]
 │
 └── docs/
     └── PRD_Master_Section_Tailwind.md
@@ -74,26 +71,3 @@ Master-Section/
 
 ---
 
-## Section List
-
-| Section | Status | Variasi |
-|---------|--------|---------|
-| About | ⬜ | - |
-| Blog | ⬜ | - |
-| Call To Action | ⬜ | - |
-| Clients | ⬜ | - |
-| Contact | ⬜ | - |
-| Facts | ⬜ | - |
-| FAQ | ⬜ | - |
-| Features | ⬜ | - |
-| Footer | ⬜ | - |
-| Hero | ⬜ | - |
-| Misc | ⬜ | - |
-| Navbar | ⬜ | Center, Logo Left, Logo Right, Fixed, Sticky, Transparent |
-| Portfolio | ⬜ | - |
-| Pricing | ⬜ | - |
-| Process | ⬜ | - |
-| Team | ⬜ | - |
-| Testimonials | ⬜ | - |
-
-**Legenda:** ⬜ Belum · 🔄 Dalam proses · ✅ Selesai
