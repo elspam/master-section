@@ -1,0 +1,140 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<section class="bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+        <div class="bg-indigo-50 rounded-3xl">
+            <div class="p-8 md:p-12 xl:p-14">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-20 items-start">
+
+                    <!-- Text -->
+                    <div>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h3>
+                        <p class="text-lg text-gray-500 mb-0">If you don't see an answer to your question, you can send
+                            us an email from our contact form.</p>
+                    </div>
+                    <!--/column -->
+
+                    <!-- Accordion (plain, no card boxes) -->
+                    <div class="flex flex-col divide-y divide-gray-200/70">
+
+                        <!-- Item 1 -->
+                        <div class="accordion-item py-4 first:pt-0">
+                            <button type="button"
+                                class="accordion-btn group w-full flex items-center gap-3 text-left font-semibold text-gray-900">
+                                <svg class="accordion-icon w-4 h-4 shrink-0 text-blue-600 transition-transform duration-200"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span
+                                    class="accordion-title text-gray-900 group-hover:text-blue-600 transition-colors">How
+                                    do I get my subscription receipt?</span>
+                            </button>
+                            <div class="accordion-panel overflow-hidden transition-[max-height] duration-300 max-h-0">
+                                <div class="pt-3 pl-7">
+                                    <p class="text-gray-500 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="accordion-item py-4">
+                            <button type="button"
+                                class="accordion-btn group w-full flex items-center gap-3 text-left font-semibold text-gray-900">
+                                <svg class="accordion-icon w-4 h-4 shrink-0 text-blue-600 transition-transform duration-200"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span
+                                    class="accordion-title text-gray-900 group-hover:text-blue-600 transition-colors">Are
+                                    there any discounts for people in need?</span>
+                            </button>
+                            <div class="accordion-panel overflow-hidden transition-[max-height] duration-300 max-h-0">
+                                <div class="pt-3 pl-7">
+                                    <p class="text-gray-500 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="accordion-item py-4">
+                            <button type="button"
+                                class="accordion-btn group w-full flex items-center gap-3 text-left font-semibold text-gray-900">
+                                <svg class="accordion-icon w-4 h-4 shrink-0 text-blue-600 transition-transform duration-200"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span
+                                    class="accordion-title text-gray-900 group-hover:text-blue-600 transition-colors">Do
+                                    you offer a free trial edit?</span>
+                            </button>
+                            <div class="accordion-panel overflow-hidden transition-[max-height] duration-300 max-h-0">
+                                <div class="pt-3 pl-7">
+                                    <p class="text-gray-500 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="accordion-item py-4 last:pb-0">
+                            <button type="button"
+                                class="accordion-btn group w-full flex items-center gap-3 text-left font-semibold text-gray-900">
+                                <svg class="accordion-icon w-4 h-4 shrink-0 text-blue-600 transition-transform duration-200"
+                                    viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span
+                                    class="accordion-title text-gray-900 group-hover:text-blue-600 transition-colors">How
+                                    do I reset my Account password?</span>
+                            </button>
+                            <div class="accordion-panel overflow-hidden transition-[max-height] duration-300 max-h-0">
+                                <div class="pt-3 pl-7">
+                                    <p class="text-gray-500 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                        tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--/column -->
+
+                </div>
+                <!--/.row -->
+            </div>
+        </div>
+        <!--/.card -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /section -->
+
+<script>
+    document.querySelectorAll('.accordion-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.accordion-item');
+            const panel = item.querySelector('.accordion-panel');
+            const icon = btn.querySelector('.accordion-icon');
+            const title = btn.querySelector('.accordion-title');
+            const isOpen = panel.style.maxHeight && panel.style.maxHeight !== '0px';
+
+            // Toggle only this item — others stay as they are (multiple can be open at once)
+            if (isOpen) {
+                panel.style.maxHeight = '0px';
+                icon.classList.remove('rotate-180');
+                title.classList.remove('text-blue-600');
+                title.classList.add('text-gray-900');
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+                title.classList.remove('text-gray-900');
+                title.classList.add('text-blue-600');
+            }
+        });
+    });
+</script>

@@ -1,0 +1,117 @@
+s
+<script src="https://cdn.tailwindcss.com"></script>
+
+<section class="bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-8 xl:gap-12">
+
+            <!-- Illustration -->
+            <div class="w-full lg:w-1/2">
+                <figure>
+                    <img class="w-auto" src="../../assets/images/i5.png" srcset="../../assets/images/i5@2x.png 2x"
+                        alt="" />
+                </figure>
+            </div>
+            <!--/column -->
+
+            <!-- FAQ accordion -->
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-3">Common Questions</h2>
+                <p class="text-lg md:text-xl text-gray-500 mb-6 xl:pr-10">If you don't see an <span
+                        class="underline decoration-blue-400">answer to your question</span>, you can send us an
+                    email from our contact form.</p>
+
+                <div class="divide-y divide-gray-200 border-t border-b border-gray-200">
+
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <button type="button"
+                            class="accordion-btn w-full flex items-center justify-between gap-4 py-5 text-left font-semibold text-gray-900">
+                            <span>Can I cancel my subscription?</span>
+                            <svg class="accordion-icon w-5 h-5 shrink-0 text-blue-600 transition-transform duration-200 rotate-180"
+                                viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300 max-h-96">
+                            <p class="pb-5 text-gray-600 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis
+                                consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <button type="button"
+                            class="accordion-btn w-full flex items-center justify-between gap-4 py-5 text-left font-semibold text-gray-900">
+                            <span>Which payment methods do you accept?</span>
+                            <svg class="accordion-icon w-5 h-5 shrink-0 text-blue-600 transition-transform duration-200"
+                                viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300 max-h-0">
+                            <p class="pb-5 text-gray-600 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis
+                                consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <button type="button"
+                            class="accordion-btn w-full flex items-center justify-between gap-4 py-5 text-left font-semibold text-gray-900">
+                            <span>How can I manage my Account?</span>
+                            <svg class="accordion-icon w-5 h-5 shrink-0 text-blue-600 transition-transform duration-200"
+                                viewBox="0 0 20 20" fill="none">
+                                <path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <div class="accordion-panel overflow-hidden transition-all duration-300 max-h-0">
+                            <p class="pb-5 text-gray-600 leading-relaxed">Fusce dapibus, tellus ac cursus commodo,
+                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis
+                                consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.accordion -->
+            </div>
+            <!--/column -->
+
+        </div>
+        <!--/.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /section -->
+
+<script>
+    document.querySelectorAll('.accordion-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.accordion-item');
+            const panel = item.querySelector('.accordion-panel');
+            const icon = btn.querySelector('.accordion-icon');
+            const isOpen = panel.classList.contains('max-h-96');
+
+            // Close all other panels (accordion behavior: only one open at a time)
+            document.querySelectorAll('.accordion-panel').forEach((p) => {
+                p.classList.remove('max-h-96');
+                p.classList.add('max-h-0');
+            });
+            document.querySelectorAll('.accordion-icon').forEach((i) => {
+                i.classList.remove('rotate-180');
+            });
+
+            // Toggle the clicked one
+            if (!isOpen) {
+                panel.classList.remove('max-h-0');
+                panel.classList.add('max-h-96');
+                icon.classList.add('rotate-180');
+            }
+        });
+    });
+</script>
