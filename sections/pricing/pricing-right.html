@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Right – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white min-h-screen antialiased">
+
+    <!-- Preview Header -->
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Pricing Right</span>
+    </div>
+
+    <!-- Component -->
+    <section class="bg-gray-50 border-b border-gray-200 overflow-hidden relative">
+        <div class="container mx-auto px-4 md:px-6 py-14 md:py-24 max-w-[1320px]">
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-8">
+
+                <!-- Left Content -->
+                <div class="w-full lg:w-4/12">
+                    <h2
+                        class="text-4xl md:text-[2.75rem] font-bold text-[#343f52] lg:mt-12 mb-4 tracking-tight leading-tight">
+                        Our Pricing</h2>
+                    <p class="text-lg md:text-[1.15rem] leading-relaxed text-[#60697b] mb-4">We offer <span
+                            class="underline decoration-[#3f78e0] underline-offset-4 font-semibold">great prices</span>,
+                        premium and quality products for your business.</p>
+                    <p class="text-[1.05rem] text-[#60697b] mb-6">Enjoy a <a href="#"
+                            class="text-[#3f78e0] hover:text-[#3666be] transition-colors font-semibold">free 30-day
+                            trial</a> and experience the full service. No credit card required!</p>
+                    <a href="#"
+                        class="inline-flex items-center justify-center px-7 py-3.5 text-[15px] font-bold text-white bg-[#3f78e0] rounded-full hover:bg-[#3666be] hover:-translate-y-1 hover:shadow-lg transition-all duration-300">See
+                        All Prices</a>
+                </div>
+
+                <!-- Right Content (Pricing Cards) -->
+                <div class="w-full lg:w-7/12 lg:ml-auto relative">
+
+                    <!-- Switcher -->
+                    <div class="flex items-center justify-start lg:justify-end mb-10">
+                        <span class="text-[15px] font-semibold text-[#343f52]">Monthly</span>
+                        <label class="relative inline-flex items-center cursor-pointer mx-4">
+                            <input type="checkbox" id="pricing-toggle" class="sr-only peer">
+                            <div
+                                class="w-14 h-8 bg-blue-100 rounded-full peer peer-checked:after:translate-x-6 after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-[#3f78e0] after:rounded-full after:h-6 after:w-6 after:transition-all">
+                            </div>
+                        </label>
+                        <span class="text-[15px] font-semibold text-[#343f52]">Yearly <span
+                                class="text-[#e2626b] font-bold ml-1">(Save 30%)</span></span>
+                    </div>
+
+                    <!-- Cards Wrapper -->
+                    <div class="relative mt-8">
+
+                        <!-- Decorative Shapes (Using Tailwind instead of images) -->
+                        <div
+                            class="absolute -bottom-4 -right-6 w-32 h-32 bg-[radial-gradient(#3f78e0_2px,transparent_2px)] [background-size:12px_12px] opacity-30 z-0">
+                        </div>
+                        <div
+                            class="absolute -top-6 -left-8 w-32 h-32 rounded-full border-[10px] border-[#e2626b] opacity-20 z-0">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+
+                            <!-- Premium Plan -->
+                            <div
+                                class="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] p-8 md:p-10 flex flex-col">
+                                <div class="flex items-baseline mb-2 text-[#343f52]">
+                                    <span class="text-2xl font-semibold">$</span>
+                                    <span
+                                        class="text-[3.25rem] leading-none font-bold tracking-tight mx-1 price-monthly">19</span>
+                                    <span
+                                        class="text-[3.25rem] leading-none font-bold tracking-tight mx-1 price-yearly hidden">199</span>
+                                    <span class="text-gray-500 font-medium price-monthly">/mo</span>
+                                    <span class="text-gray-500 font-medium price-yearly hidden">/yr</span>
+                                </div>
+                                <h4 class="text-[1.15rem] font-bold text-[#343f52] mt-3 mb-6">Premium Plan</h4>
+
+                                <ul class="space-y-4 mb-8 text-[15px] text-[#60697b]">
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span><strong class="text-[#343f52]">5</strong> Projects</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span><strong class="text-[#343f52]">100K</strong> API Access</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span><strong class="text-[#343f52]">200MB</strong> Storage</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span>Weekly <strong class="text-[#343f52]">Reports</strong></span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-red-100 flex items-center justify-center text-[#e2626b]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </span>
+                                        <span>7/24 <strong class="text-[#343f52]">Support</strong></span>
+                                    </li>
+                                </ul>
+                                <a href="#"
+                                    class="inline-flex items-center justify-center w-full px-6 py-3.5 text-[15px] font-bold text-white bg-[#3f78e0] rounded-full hover:bg-[#3666be] hover:-translate-y-1 transition-all duration-300 mt-auto">Choose
+                                    Plan</a>
+                            </div>
+
+                            <!-- Corporate Plan -->
+                            <div
+                                class="bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.04)] p-8 md:p-10 flex flex-col relative">
+                                <div class="flex items-baseline mb-2 text-[#343f52]">
+                                    <span class="text-2xl font-semibold">$</span>
+                                    <span
+                                        class="text-[3.25rem] leading-none font-bold tracking-tight mx-1 price-monthly">49</span>
+                                    <span
+                                        class="text-[3.25rem] leading-none font-bold tracking-tight mx-1 price-yearly hidden">499</span>
+                                    <span class="text-gray-500 font-medium price-monthly">/mo</span>
+                                    <span class="text-gray-500 font-medium price-yearly hidden">/yr</span>
+                                </div>
+                                <h4 class="text-[1.15rem] font-bold text-[#343f52] mt-3 mb-6">Corporate Plan</h4>
+
+                                <ul class="space-y-4 mb-8 text-[15px] text-[#60697b]">
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span><strong class="text-[#343f52]">20</strong> Projects</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span><strong class="text-[#343f52]">300K</strong> API Access</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span><strong class="text-[#343f52]">500MB</strong> Storage</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span>Weekly <strong class="text-[#343f52]">Reports</strong></span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center text-[#3f78e0]">
+                                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </span>
+                                        <span>7/24 <strong class="text-[#343f52]">Support</strong></span>
+                                    </li>
+                                </ul>
+                                <a href="#"
+                                    class="inline-flex items-center justify-center w-full px-6 py-3.5 text-[15px] font-bold text-white bg-[#3f78e0] rounded-full hover:bg-[#3666be] hover:-translate-y-1 transition-all duration-300 mt-auto">Choose
+                                    Plan</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Script logic untuk Pricing Switcher -->
+    <script>
+        const toggle = document.getElementById('pricing-toggle');
+        const monthlyPrices = document.querySelectorAll('.price-monthly');
+        const yearlyPrices = document.querySelectorAll('.price-yearly');
+
+        toggle.addEventListener('change', function () {
+            if (this.checked) {
+                // Tampilkan Harga Tahunan
+                monthlyPrices.forEach(el => el.classList.add('hidden'));
+                yearlyPrices.forEach(el => el.classList.remove('hidden'));
+            } else {
+                // Tampilkan Harga Bulanan
+                monthlyPrices.forEach(el => el.classList.remove('hidden'));
+                yearlyPrices.forEach(el => el.classList.add('hidden'));
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white min-h-screen antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Pricing Table</span>
+    </div>
+
+    <section class="bg-gray-50 border-b border-gray-200">
+        <div class="container mx-auto px-4 md:px-6 py-14 md:py-16 max-w-[1320px]">
+
+            <!-- Section Header -->
+            <h2 class="text-[2.5rem] md:text-[2.75rem] font-bold text-[#343f52] tracking-tight leading-tight mb-3">
+                Our Pricing
+            </h2>
+            <p class="text-lg md:text-[1.15rem] text-[#60697b] mb-2">
+                We offer
+                <span class="underline decoration-[#3f78e0] underline-offset-4 font-semibold">great prices</span>,
+                premium and quality products for your business.
+            </p>
+            <div class="max-w-lg">
+                <p class="text-[1.05rem] text-[#60697b] mb-5">
+                    Enjoy a
+                    <a href="#" class="text-[#3f78e0] hover:text-[#3666be] transition-colors font-semibold">free
+                        30-day trial</a>
+                    and experience the full service. No credit card required!
+                </p>
+            </div>
+            <a href="#"
+                class="inline-flex items-center justify-center px-7 py-3 text-[15px] font-bold text-white bg-[#3f78e0] rounded-full hover:bg-[#3666be] hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 mb-10">
+                See All Prices
+            </a>
+
+            <!-- Responsive Table Wrapper -->
+            <div class="w-full overflow-x-auto rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.05)]">
+                <table class="w-full text-center border-collapse min-w-[640px]">
+
+                    <!-- Table Head -->
+                    <thead>
+                        <tr class="bg-white border-b border-gray-100">
+                            <!-- Empty header cell for the feature column -->
+                            <th class="w-1/5 p-6 text-left"></th>
+
+                            <th class="p-6 font-normal">
+                                <div class="text-[1.15rem] font-bold text-[#343f52] mb-1">Basic Plan</div>
+                                <div class="text-[14px] text-[#adb5bd] font-medium">$9 / Monthly</div>
+                            </th>
+                            <th class="p-6 font-normal">
+                                <div class="text-[1.15rem] font-bold text-[#343f52] mb-1">Premium Plan</div>
+                                <div class="text-[14px] text-[#adb5bd] font-medium">$19 / Monthly</div>
+                            </th>
+                            <th class="p-6 font-normal">
+                                <div class="text-[1.15rem] font-bold text-[#343f52] mb-1">Corporate Plan</div>
+                                <div class="text-[14px] text-[#adb5bd] font-medium">$29 / Monthly</div>
+                            </th>
+                            <th class="p-6 font-normal">
+                                <div class="text-[1.15rem] font-bold text-[#343f52] mb-1">Business Plan</div>
+                                <div class="text-[14px] text-[#adb5bd] font-medium">$49 / Monthly</div>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table Body -->
+                    <tbody>
+                        <!-- Row: Project -->
+                        <tr class="odd:bg-white even:bg-gray-50 border-b border-gray-100">
+                            <td class="p-5 text-left text-[14px] font-semibold text-[#343f52]">Project</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">1</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">5</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">20</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">90</td>
+                        </tr>
+
+                        <!-- Row: API Access -->
+                        <tr class="odd:bg-white even:bg-gray-50 border-b border-gray-100">
+                            <td class="p-5 text-left text-[14px] font-semibold text-[#343f52]">API Access</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">100K</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">200K</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">300K</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">900K</td>
+                        </tr>
+
+                        <!-- Row: Storage -->
+                        <tr class="odd:bg-white even:bg-gray-50 border-b border-gray-100">
+                            <td class="p-5 text-left text-[14px] font-semibold text-[#343f52]">Storage</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">100MB</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">200MB</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">500MB</td>
+                            <td class="p-5 text-[14px] text-[#60697b] font-medium">900MB</td>
+                        </tr>
+
+                        <!-- Row: Weekly Reports -->
+                        <tr class="odd:bg-white even:bg-gray-50 border-b border-gray-100">
+                            <td class="p-5 text-left text-[14px] font-semibold text-[#343f52]">Weekly Reports</td>
+                            <!-- Tidak tersedia: dash -->
+                            <td class="p-5 text-[#adb5bd] font-bold text-lg">–</td>
+                            <!-- Tersedia: check icon badge -->
+                            <td class="p-5">
+                                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-[#3f78e0]">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="p-5">
+                                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-[#3f78e0]">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="p-5">
+                                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-[#3f78e0]">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+
+                        <!-- Row: 24/7 Support -->
+                        <tr class="odd:bg-white even:bg-gray-50">
+                            <td class="p-5 text-left text-[14px] font-semibold text-[#343f52]">24/7 Support</td>
+                            <td class="p-5 text-[#adb5bd] font-bold text-lg">–</td>
+                            <td class="p-5 text-[#adb5bd] font-bold text-lg">–</td>
+                            <td class="p-5">
+                                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-[#3f78e0]">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                            </td>
+                            <td class="p-5">
+                                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-blue-100 text-[#3f78e0]">
+                                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Table Footer (CTA Buttons) -->
+                    <tfoot>
+                        <tr class="bg-white border-t border-gray-100">
+                            <th class="p-6"></th>
+                            <th class="p-6 font-normal">
+                                <a href="#"
+                                    class="inline-flex items-center justify-center px-5 py-2.5 text-[14px] font-bold text-[#3f78e0] bg-blue-50 hover:bg-[#3f78e0] hover:text-white rounded-full transition-all duration-300 border border-blue-100 hover:border-transparent">
+                                    Choose Plan
+                                </a>
+                            </th>
+                            <th class="p-6 font-normal">
+                                <a href="#"
+                                    class="inline-flex items-center justify-center px-5 py-2.5 text-[14px] font-bold text-[#3f78e0] bg-blue-50 hover:bg-[#3f78e0] hover:text-white rounded-full transition-all duration-300 border border-blue-100 hover:border-transparent">
+                                    Choose Plan
+                                </a>
+                            </th>
+                            <th class="p-6 font-normal">
+                                <a href="#"
+                                    class="inline-flex items-center justify-center px-5 py-2.5 text-[14px] font-bold text-[#3f78e0] bg-blue-50 hover:bg-[#3f78e0] hover:text-white rounded-full transition-all duration-300 border border-blue-100 hover:border-transparent">
+                                    Choose Plan
+                                </a>
+                            </th>
+                            <th class="p-6 font-normal">
+                                <a href="#"
+                                    class="inline-flex items-center justify-center px-5 py-2.5 text-[14px] font-bold text-[#3f78e0] bg-blue-50 hover:bg-[#3f78e0] hover:text-white rounded-full transition-all duration-300 border border-blue-100 hover:border-transparent">
+                                    Choose Plan
+                                </a>
+                            </th>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

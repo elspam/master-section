@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Slider – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menambahkan konfigurasi Tailwind untuk animasi infinite-scroll tanpa inline CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 30s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: { transform: 'translateX(0)' },
+                            to: { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white min-h-screen antialiased">
+
+    <!-- Preview Header -->
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Client Slider</span>
+    </div>
+
+    <!-- Component -->
+    <section class="bg-gray-50 border-b border-gray-200 overflow-hidden">
+        <div class="container mx-auto px-4 md:px-6 py-14 md:py-16 max-w-[1320px]">
+            <p class="text-center text-[#60697b] font-medium mb-8">Trusted by over 2K+ clients across the world</p>
+
+            <!-- Ticker Wrapper dengan Mask Gradient untuk efek fade-out di pinggir -->
+            <div
+                class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+
+                <!-- List gambar, diduplikasi 2 kali untuk efek infinite loop yang mulus -->
+                <ul
+                    class="flex items-center justify-center md:justify-start [&_li]:mx-6 lg:[&_li]:mx-10 [&_img]:max-w-none animate-infinite-scroll">
+
+                    <!-- Set Pertama -->
+                    <li><img src="../../assets/images/brands/c1.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c2.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c3.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c4.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c5.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c6.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c7.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c8.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c9.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c10.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+                    <li><img src="../../assets/images/brands/c11.png" alt=""
+                            class="h-7 md:h-9 opacity-70 hover:opacity-100 transition-opacity" /></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
