@@ -1,0 +1,94 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<section>
+    <div class="relative bg-cover bg-center bg-no-repeat bg-fixed bg-[url('../../assets/images/bg36.jpg')] before:absolute before:inset-0 before:bg-slate-900/50 before:z-0 z-0 py-20 md:py-24"
+        data-image-src="../../assets/images/bg36.jpg">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full xl:w-3/4 px-4 mx-auto">
+                    <div class="bg-white/90 rounded-xl shadow-lg overflow-hidden">
+                        <div class="p-8 lg:py-16 lg:px-20">
+                            <h2 class="text-4xl lg:text-5xl font-bold mb-4 text-center text-gray-900">Request
+                                Photography Pricing</h2>
+                            <p class="text-lg lg:text-xl text-gray-600 text-center mb-12">For more information please
+                                get in touch using the
+                                form below:</p>
+                            <form class="contact-form" method="post" action="./assets/php/contact.php" novalidate>
+                                <div class="messages"></div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="col-span-1">
+                                        <div class="relative">
+                                            <input id="form_name" type="text" name="name"
+                                                class="peer block w-full rounded-md border-0 bg-white/70 px-4 pb-2 pt-6 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent"
+                                                placeholder="Name" required>
+                                            <label for="form_name"
+                                                class="absolute left-4 top-2 text-xs text-gray-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs">Name
+                                                *</label>
+                                            <div class="hidden text-green-500 text-sm mt-1">
+                                                Looks good!
+                                            </div>
+                                            <div class="hidden text-red-500 text-sm mt-1">
+                                                Please enter your name.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /column -->
+                                    <div class="col-span-1">
+                                        <div class="relative">
+                                            <input id="form_email" type="email" name="email"
+                                                class="peer block w-full rounded-md border-0 bg-white/70 px-4 pb-2 pt-6 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent"
+                                                placeholder="jane.doe@example.com" required>
+                                            <label for="form_email"
+                                                class="absolute left-4 top-2 text-xs text-gray-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs">Email
+                                                *</label>
+                                            <div class="hidden text-green-500 text-sm mt-1">
+                                                Looks good!
+                                            </div>
+                                            <div class="hidden text-red-500 text-sm mt-1">
+                                                Please provide a valid email address.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /column -->
+                                    <div class="col-span-1 md:col-span-2">
+                                        <div class="relative">
+                                            <textarea id="form_message" name="message"
+                                                class="peer block w-full h-[150px] rounded-md border-0 bg-white/70 px-4 pb-2 pt-6 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent resize-none"
+                                                placeholder="Your message" required></textarea>
+                                            <label for="form_message"
+                                                class="absolute left-4 top-2 text-xs text-gray-500 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs">Message
+                                                *</label>
+                                            <div class="hidden text-green-500 text-sm mt-1">
+                                                Looks good!
+                                            </div>
+                                            <div class="hidden text-red-500 text-sm mt-1">
+                                                Please enter your messsage.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /column -->
+                                    <div class="col-span-1 md:col-span-2 text-center mt-2">
+                                        <input type="submit"
+                                            class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition-colors cursor-pointer border-0"
+                                            value="Send message">
+                                    </div>
+                                    <!-- /column -->
+                                </div>
+                                <!-- /.row -->
+                            </form>
+                            <!-- /form -->
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.wrapper -->
+</section>
+
+
+<!-- /section -->
