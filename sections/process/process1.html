@@ -1,0 +1,86 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<section class="bg-gray-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-3">How We Do It?</h2>
+        <p class="text-lg md:text-xl text-gray-500 mb-8">We make your spending <span
+                class="underline decoration-blue-400">stress-free</span> for you to have the perfect control.</p>
+
+        <div class="relative">
+
+            <!-- Connecting line: positioned precisely via JS to match circle centers exactly -->
+            <div id="process-line" class="hidden md:block absolute top-8 h-0.5 bg-gray-200 z-0"></div>
+
+            <div id="process-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+                <div>
+                    <span
+                        class="process-circle relative z-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 w-16 h-16 text-lg font-bold mb-4">01</span>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Concept</h4>
+                    <p class="mb-0 text-gray-600">Nulla vitae elit libero elit non porta gravida eget metus cras.
+                        Aenean eu leo quam. Pellentesque ornare.</p>
+                </div>
+                <!--/column -->
+
+                <div>
+                    <span
+                        class="process-circle relative z-10 flex items-center justify-center rounded-full bg-blue-600 text-white w-16 h-16 text-lg font-bold mb-4">02</span>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Prepare</h4>
+                    <p class="mb-0 text-gray-600">Vestibulum id ligula porta felis euismod semper. Sed posuere
+                        consectetur est at lobortis.</p>
+                </div>
+                <!--/column -->
+
+                <div>
+                    <span
+                        class="process-circle relative z-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 w-16 h-16 text-lg font-bold mb-4">03</span>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Retouch</h4>
+                    <p class="mb-0 text-gray-600">Integer posuere erat a ante venenatis dapibus posuere velit
+                        aliquet. Nulla vitae elit libero.</p>
+                </div>
+                <!--/column -->
+
+                <div>
+                    <span
+                        class="process-circle relative z-10 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 w-16 h-16 text-lg font-bold mb-4">04</span>
+                    <h4 class="text-xl font-bold text-gray-900 mb-1">Finalize</h4>
+                    <p class="mb-0 text-gray-600">Integer posuere erat, consectetur adipiscing elit. Fusce dapibus,
+                        tellus ac cursus commodo.</p>
+                </div>
+                <!--/column -->
+
+            </div>
+            <!--/.row -->
+        </div>
+
+    </div>
+    <!-- /.container -->
+</section>
+<!-- /section -->
+
+<script>
+    function positionProcessLine() {
+        const grid = document.getElementById('process-grid');
+        const line = document.getElementById('process-line');
+        const circles = grid.querySelectorAll('.process-circle');
+        if (circles.length < 2) return;
+
+        const gridRect = grid.getBoundingClientRect();
+        const firstCircle = circles[0].getBoundingClientRect();
+        const lastCircle = circles[circles.length - 1].getBoundingClientRect();
+
+        if (Math.abs(firstCircle.top - lastCircle.top) > 5) {
+            line.style.width = '0px';
+            return;
+        }
+
+        const firstCenterX = firstCircle.left + firstCircle.width / 2 - gridRect.left;
+        const lastCenterX = lastCircle.left + lastCircle.width / 2 - gridRect.left;
+
+        line.style.left = firstCenterX + 'px';
+        line.style.width = (lastCenterX - firstCenterX) + 'px';
+    }
+
+    window.addEventListener('load', positionProcessLine);
+    window.addEventListener('resize', positionProcessLine);
+</script>
