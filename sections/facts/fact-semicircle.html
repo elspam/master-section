@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Facts Animated – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Gaya kustom dasar untuk menganimasikan SVG stroke-dashoffset secara dinamis */
+        @keyframes fillSpace {
+            from {
+                stroke-dashoffset: 220; /* 220 adalah keliling setengah lingkaran penuh */
+            }
+        }
+        
+        .animate-progress {
+            animation: fillSpace 1.5s cubic-bezier(0.1, 1, 0.1, 1) forwards;
+        }
+    </style>
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Company Facts (Animated Semi-Circle)</span>
+    </div>
+
+    <section class="w-full px-4 md:px-8 py-10 overflow-hidden">
+        <div class="bg-[#e8f1fd]/50 rounded-[1rem] max-w-[1320px] mx-auto">
+            <div class="container mx-auto px-6 py-14 md:py-16 text-center">
+                
+                <div class="max-w-[750px] mx-auto mb-12 md:mb-14">
+                    <h2 class="text-[13px] tracking-[0.05em] font-extrabold text-uppercase text-[#aab0bc] uppercase mb-3">
+                        Company Facts
+                    </h2>
+                    <h3 class="text-[1.8rem] md:text-[2.2rem] font-extrabold text-[#343f52] tracking-tight leading-[1.25]">
+                        Save your time and money by choosing our professional team.
+                    </h3>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8">
+                    
+                    <div class="flex flex-col items-center fact-item" data-value="75">
+                        <div class="relative w-40 h-20 overflow-hidden mb-4">
+                            <svg class="w-40 h-40 transform -rotate-180" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="transparent" stroke="#e5e7eb" stroke-width="6" stroke-dasharray="110 220" stroke-linecap="round" />
+                                <circle class="progress-bar-fill opacity-0" cx="50" cy="50" r="35" fill="transparent" stroke="#605dba" stroke-width="6" stroke-dasharray="110 220" stroke-dashoffset="27.5" stroke-linecap="round" />
+                            </svg>
+                            <div class="absolute bottom-0 left-0 right-0 text-center">
+                                <span class="text-[20px] font-extrabold text-[#343f52]"><span class="counter-text">0</span>%</span>
+                            </div>
+                        </div>
+                        <h4 class="text-[17px] font-bold text-[#343f52] mb-1.5">New Visitors</h4>
+                        <p class="text-[14px] leading-[1.6] text-[#60697b] font-medium max-w-[240px]">
+                            Maecenas faucibus mollis interdum. Aenean eu leo.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center fact-item" data-value="80">
+                        <div class="relative w-40 h-20 overflow-hidden mb-4">
+                            <svg class="w-40 h-40 transform -rotate-180" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="transparent" stroke="#e5e7eb" stroke-width="6" stroke-dasharray="110 220" stroke-linecap="round" />
+                                <circle class="progress-bar-fill opacity-0" cx="50" cy="50" r="35" fill="transparent" stroke="#45c4a0" stroke-width="6" stroke-dasharray="110 220" stroke-dashoffset="22" stroke-linecap="round" />
+                            </svg>
+                            <div class="absolute bottom-0 left-0 right-0 text-center">
+                                <span class="text-[20px] font-extrabold text-[#343f52]"><span class="counter-text">0</span>%</span>
+                            </div>
+                        </div>
+                        <h4 class="text-[17px] font-bold text-[#343f52] mb-1.5">Social Media</h4>
+                        <p class="text-[14px] leading-[1.6] text-[#60697b] font-medium max-w-[240px]">
+                            Maecenas faucibus mollis interdum. Aenean eu leo.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center fact-item" data-value="60">
+                        <div class="relative w-40 h-20 overflow-hidden mb-4">
+                            <svg class="w-40 h-40 transform -rotate-180" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="transparent" stroke="#e5e7eb" stroke-width="6" stroke-dasharray="110 220" stroke-linecap="round" />
+                                <circle class="progress-bar-fill opacity-0" cx="50" cy="50" r="35" fill="transparent" stroke="#f15b7c" stroke-width="6" stroke-dasharray="110 220" stroke-dashoffset="44" stroke-linecap="round" />
+                            </svg>
+                            <div class="absolute bottom-0 left-0 right-0 text-center">
+                                <span class="text-[20px] font-extrabold text-[#343f52]"><span class="counter-text">0</span>%</span>
+                            </div>
+                        </div>
+                        <h4 class="text-[17px] font-bold text-[#343f52] mb-1.5">Referrals</h4>
+                        <p class="text-[14px] leading-[1.6] text-[#60697b] font-medium max-w-[240px]">
+                            Maecenas faucibus mollis interdum. Aenean eu leo.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center fact-item" data-value="90">
+                        <div class="relative w-40 h-20 overflow-hidden mb-4">
+                            <svg class="w-40 h-40 transform -rotate-180" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="35" fill="transparent" stroke="#e5e7eb" stroke-width="6" stroke-dasharray="110 220" stroke-linecap="round" />
+                                <circle class="progress-bar-fill opacity-0" cx="50" cy="50" r="35" fill="transparent" stroke="#fab758" stroke-width="6" stroke-dasharray="110 220" stroke-dashoffset="11" stroke-linecap="round" />
+                            </svg>
+                            <div class="absolute bottom-0 left-0 right-0 text-center">
+                                <span class="text-[20px] font-extrabold text-[#343f52]"><span class="counter-text">0</span>%</span>
+                            </div>
+                        </div>
+                        <h4 class="text-[17px] font-bold text-[#343f52] mb-1.5">Search Engines</h4>
+                        <p class="text-[14px] leading-[1.6] text-[#60697b] font-medium max-w-[240px]">
+                            Maecenas faucibus mollis interdum. Aenean eu leo.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const items = document.querySelectorAll('.fact-item');
+
+            const animateItem = (item) => {
+                const targetValue = parseInt(item.getAttribute('data-value'), 10);
+                const progressCircle = item.querySelector('.progress-bar-fill');
+                const counterText = item.querySelector('.counter-text');
+                
+                // 1. Jalankan Animasi Pengisian Busur Lingkaran SVG
+                progressCircle.classList.remove('opacity-0');
+                progressCircle.classList.add('animate-progress');
+                
+                // 2. Jalankan Animasi Penghitung Angka (Counter)
+                let startValue = 0;
+                const duration = 1500; // waktu keselarasan durasi animasi dalam milidetik
+                const stepTime = Math.abs(Math.floor(duration / targetValue));
+                
+                const timer = setInterval(() => {
+                    startValue += 1;
+                    counterText.textContent = startValue;
+                    if (startValue >= targetValue) {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            };
+
+            // Menggunakan IntersectionObserver agar animasi berjalan hanya ketika elemen masuk layar view
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateItem(entry.target);
+                        observer.unobserve(entry.target); // Matikan observer setelah sekali jalan
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            items.forEach(item => observer.observe(item));
+        });
+    </script>
+</body>
+
+</html>

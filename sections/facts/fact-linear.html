@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Facts Linear Counter – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Linear Counter Section</span>
+    </div>
+
+    <section class="bg-[#f0f3f9]/40 w-full">
+        <div class="max-w-[1320px] mx-auto px-6 py-14 md:py-16">
+
+            <div class="max-w-[1100px] mx-auto">
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-6 text-center items-center">
+
+                    <div class="counter-item" data-target="7518">
+                        <img src="../../assets/icons/lineal/check.svg" class="w-12 h-12 mx-auto mb-3 text-[#3f78e0]"
+                            alt="Completed Projects" />
+                        <h3 class="text-[2.2rem] font-extrabold text-[#343f52] tracking-tight leading-none mb-2">
+                            <span class="counter-value">0</span>
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] font-semibold text-[#60697b]">Completed Projects</p>
+                    </div>
+
+                    <div class="counter-item" data-target="3472">
+                        <img src="../../assets/icons/lineal/user.svg" class="w-12 h-12 mx-auto mb-3 text-[#3f78e0]"
+                            alt="Happy Customers" />
+                        <h3 class="text-[2.2rem] font-extrabold text-[#343f52] tracking-tight leading-none mb-2">
+                            <span class="counter-value">0</span>
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] font-semibold text-[#60697b]">Happy Customers</p>
+                    </div>
+
+                    <div class="counter-item" data-target="2184">
+                        <img src="../../assets/icons/lineal/briefcase-2.svg"
+                            class="w-12 h-12 mx-auto mb-3 text-[#3f78e0]" alt="Expert Employees" />
+                        <h3 class="text-[2.2rem] font-extrabold text-[#343f52] tracking-tight leading-none mb-2">
+                            <span class="counter-value">0</span>
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] font-semibold text-[#60697b]">Expert Employees</p>
+                    </div>
+
+                    <div class="counter-item" data-target="4523">
+                        <img src="../../assets/icons/lineal/award-2.svg" class="w-12 h-12 mx-auto mb-3 text-[#3f78e0]"
+                            alt="Awards Won" />
+                        <h3 class="text-[2.2rem] font-extrabold text-[#343f52] tracking-tight leading-none mb-2">
+                            <span class="counter-value">0</span>
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] font-semibold text-[#60697b]">Awards Won</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter-item');
+
+            const startCounter = (item) => {
+                const target = parseInt(item.getAttribute('data-target'), 10);
+                const valueDisplay = item.querySelector('.counter-value');
+
+                let start = 0;
+                const duration = 2000; // Durasi berjalan angka 2 detik
+                const startTime = performance.now();
+
+                const updateCounter = (currentTime) => {
+                    const elapsedTime = currentTime - startTime;
+                    const progress = Math.min(elapsedTime / duration, 1);
+
+                    // Efek Easing Out Quad untuk pergerakan halus melambat di akhir
+                    const easeProgress = progress * (2 - progress);
+                    const currentValue = Math.floor(easeProgress * target);
+                    valueDisplay.textContent = currentValue;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        valueDisplay.textContent = target;
+                    }
+                };
+
+                requestAnimationFrame(updateCounter);
+            };
+
+            // Menjalankan animasi tepat ketika komponen masuk ke layar pandang (viewport)
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        startCounter(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            counters.forEach(counter => observer.observe(counter));
+        });
+    </script>
+</body>
+
+</html>
