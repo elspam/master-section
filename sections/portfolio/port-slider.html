@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Projects Slider – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        /* Kustomisasi gaya pagination dots Swiper agar melingkar abu/biru elegan sesuai template asli */
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            background: #aab0bc;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #3f78e0 !important;
+            width: 24px;
+            border-radius: 4px;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Portfolio Slider</span>
+    </div>
+
+    <section class="bg-white w-full overflow-hidden">
+        <div class="max-w-[1320px] mx-auto px-6 py-14 md:py-16">
+
+            <div class="max-w-[680px] mx-auto text-center mb-12">
+                <h2 class="text-[13px] tracking-[0.05em] font-extrabold text-uppercase text-[#aab0bc] uppercase mb-3">
+                    Latest Projects
+                </h2>
+                <h3 class="text-[1.8rem] md:text-[2.2rem] font-extrabold text-[#343f52] tracking-tight leading-[1.25]">
+                    Check out some of our awesome projects with
+                    <span class="relative inline-block z-10 px-1">
+                        creative
+                        <span
+                            class="absolute left-0 bottom-1 w-full h-[8px] bg-[#fab758]/40 -z-10 rounded-sm skew-x-3"></span>
+                    </span>
+                    ideas and great design.
+                </h3>
+            </div>
+
+            <div class="swiper myPortfolioSwiper !pb-12">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide flex flex-col group">
+                        <div class="relative overflow-hidden rounded-[0.4rem] mb-5 bg-gray-100 aspect-[4/3]">
+                            <img src="../../assets/images/photos/pd7.jpg" alt="Cras Fermentum Sem"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <a href="../../assets/images/photos/pd7-full.jpg"
+                                class="absolute inset-0 bg-[#21262c]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-[28px]">
+                                <i
+                                    class="uil uil-focus-add transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <h4
+                                class="text-[18px] font-bold text-[#343f52] hover:text-[#3f78e0] transition-colors mb-1">
+                                <a href="../../single-project.html">Cras Fermentum Sem</a>
+                            </h4>
+                            <span class="text-[13px] font-semibold text-[#aab0bc] tracking-wide">Stationary</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col group">
+                        <div class="relative overflow-hidden rounded-[0.4rem] mb-5 bg-gray-100 aspect-[4/3]">
+                            <img src="../../assets/images/photos/pd8.jpg" alt="Mollis Ipsum Mattis"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <a href="../../assets/images/photos/pd8.jpg"
+                                class="absolute inset-0 bg-[#21262c]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-[28px]">
+                                <i
+                                    class="uil uil-focus-add transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <h4
+                                class="text-[18px] font-bold text-[#343f52] hover:text-[#3f78e0] transition-colors mb-1">
+                                <a href="./single-project2.html">Mollis Ipsum Mattis</a>
+                            </h4>
+                            <span class="text-[13px] font-semibold text-[#aab0bc] tracking-wide">Magazine, Book</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col group">
+                        <div class="relative overflow-hidden rounded-[0.4rem] mb-5 bg-gray-100 aspect-[4/3]">
+                            <img src="../../assets/images/photos/pd9.jpg" alt="Ipsum Ultricies Cursus"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <a href="../../assets/images/photos/pd9.jpg"
+                                class="absolute inset-0 bg-[#21262c]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-[28px]">
+                                <i
+                                    class="uil uil-focus-add transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <h4
+                                class="text-[18px] font-bold text-[#343f52] hover:text-[#3f78e0] transition-colors mb-1">
+                                <a href="./single-project3.html">Ipsum Ultricies Cursus</a>
+                            </h4>
+                            <span class="text-[13px] font-semibold text-[#aab0bc] tracking-wide">Packaging</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col group">
+                        <div class="relative overflow-hidden rounded-[0.4rem] mb-5 bg-gray-100 aspect-[4/3]">
+                            <img src="../../assets/images/photos/pd10.jpg" alt="Inceptos Euismod Egestas"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <a href="../../assets/images/photos/pd10.jpg"
+                                class="absolute inset-0 bg-[#21262c]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-[28px]">
+                                <i
+                                    class="uil uil-focus-add transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <h4
+                                class="text-[18px] font-bold text-[#343f52] hover:text-[#3f78e0] transition-colors mb-1">
+                                <a href="./single-project.html">Inceptos Euismod Egestas</a>
+                            </h4>
+                            <span class="text-[13px] font-semibold text-[#aab0bc] tracking-wide">Stationary,
+                                Branding</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col group">
+                        <div class="relative overflow-hidden rounded-[0.4rem] mb-5 bg-gray-100 aspect-[4/3]">
+                            <img src="../../assets/images/photos/pd11.jpg" alt="Ipsum Mollis Vulputate"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <a href="../../assets/images/photos/pd11.jpg"
+                                class="absolute inset-0 bg-[#21262c]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-[28px]">
+                                <i
+                                    class="uil uil-focus-add transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <h4
+                                class="text-[18px] font-bold text-[#343f52] hover:text-[#3f78e0] transition-colors mb-1">
+                                <a href="./single-project2.html">Ipsum Mollis Vulputate</a>
+                            </h4>
+                            <span class="text-[13px] font-semibold text-[#aab0bc] tracking-wide">Packaging</span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide flex flex-col group">
+                        <div class="relative overflow-hidden rounded-[0.4rem] mb-5 bg-gray-100 aspect-[4/3]">
+                            <img src="../../assets/images/photos/pd12.jpg" alt="Porta Ornare Cras"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                            <a href="../../assets/images/photos/pd12.jpg"
+                                class="absolute inset-0 bg-[#21262c]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-[28px]">
+                                <i
+                                    class="uil uil-focus-add transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"></i>
+                            </a>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <h4
+                                class="text-[18px] font-bold text-[#343f52] hover:text-[#3f78e0] transition-colors mb-1">
+                                <a href="./single-project3.html">Porta Ornare Cras</a>
+                            </h4>
+                            <span class="text-[13px] font-semibold text-[#aab0bc] tracking-wide">Branding</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination !bottom-0"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const swiper = new Swiper(".myPortfolioSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                grabCursor: true,
+                loop: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                // Breakpoints responsif memetakan data-items dari Bootstrap asli
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
