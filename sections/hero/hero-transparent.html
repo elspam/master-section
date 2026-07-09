@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Slider Showcase – Fixed Navigation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Hero Swiper Carousel</span>
+    </div>
+
+    <div class="swiper swiper-hero-container w-full h-[600px] md:h-[85vh] max-h-[900px] relative group">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide relative bg-cover bg-center"
+                style="background-image: url('../../assets/images/photos/bg7.jpg');">
+                <div class="absolute inset-0 bg-black/45 z-10"></div>
+
+                <div class="max-w-[1320px] mx-auto h-full px-6 relative z-20 flex items-center">
+                    <div
+                        class="w-full lg:w-[55%] xl:w-[45%] text-center lg:text-left flex flex-col items-center lg:items-start">
+                        <h2 class="text-[2.5rem] md:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-4">
+                            We bring solutions to make life easier.
+                        </h2>
+                        <p class="text-[18px] md:text-[22px] font-medium text-white/90 leading-[1.4] mb-7">
+                            We are a creative company that focuses on long term relationships with customers.
+                        </p>
+                        <div>
+                            <a href="#"
+                                class="inline-block border-2 border-white text-white font-bold text-[14px] md:text-[15px] px-7 py-3.5 rounded-full hover:bg-white hover:text-[#343f52] transition-all duration-300">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide relative bg-cover bg-center"
+                style="background-image: url('../../assets/images/photos/bg8.jpg');">
+                <div class="absolute inset-0 bg-black/45 z-10"></div>
+
+                <div class="max-w-[1320px] mx-auto h-full px-6 relative z-20 flex items-center justify-center">
+                    <div class="w-full max-w-[750px] text-center flex flex-col items-center justify-center">
+                        <h2 class="text-[2.5rem] md:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-4">
+                            We are trusted by over a million customers.
+                        </h2>
+                        <p class="text-[18px] md:text-[22px] font-medium text-white/90 leading-[1.4] mb-7">
+                            Here a few reasons why our customers choose us.
+                        </p>
+                        <div>
+                            <a href="../../assets/media/movie.mp4" target="_blank"
+                                class="relative flex items-center justify-center w-16 h-16 bg-white rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+                                <span class="absolute inset-0 rounded-full bg-white/40 animate-ping"></span>
+                                <svg class="w-6 h-6 text-[#3f78e0] translate-x-[2px] relative z-10" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide relative bg-cover bg-center"
+                style="background-image: url('../../assets/images/photos/bg9.jpg');">
+                <div class="absolute inset-0 bg-black/45 z-10"></div>
+
+                <div class="max-w-[1320px] mx-auto h-full px-6 relative z-20 flex items-center justify-end">
+                    <div
+                        class="w-full lg:w-[55%] xl:w-[45%] text-center lg:text-left flex flex-col items-center lg:items-start">
+                        <h2 class="text-[2.5rem] md:text-[3.5rem] font-extrabold text-white leading-[1.1] mb-4">
+                            Just sit and relax.
+                        </h2>
+                        <p class="text-[18px] md:text-[22px] font-medium text-white/90 leading-[1.4] mb-7">
+                            We make sure your spending is stress free so that you can have the perfect control.
+                        </p>
+                        <div>
+                            <a href="#"
+                                class="inline-block border-2 border-white text-white font-bold text-[14px] md:text-[15px] px-7 py-3.5 rounded-full hover:bg-white hover:text-[#343f52] transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="custom-prev"
+            class="absolute left-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black/20 hover:bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button id="custom-next"
+            class="absolute right-4 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black/20 hover:bg-black/40 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <div
+            class="swiper-pagination z-30 !bottom-6 [--swiper-pagination-color:#ffffff] [--swiper-pagination-bullet-inactive-color:#ffffff] [--swiper-pagination-bullet-inactive-opacity:0.4]">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper-hero-container', {
+            loop: true,
+            speed: 700,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Menghubungkan ID tombol buatan kita ke controller navigasi Swiper
+            navigation: {
+                nextEl: '#custom-next',
+                prevEl: '#custom-prev',
+            },
+        });
+    </script>
+</body>
+
+</html> 

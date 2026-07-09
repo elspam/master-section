@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Background Hero – Fixed Autoplay</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Video Background Hero</span>
+    </div>
+
+    <section
+        class="relative w-full h-[80vh] min-h-[580px] max-h-[850px] overflow-hidden bg-black flex items-center justify-center">
+
+        <video id="hero-video" class="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
+            poster="../../assets/images/photos/movie2.jpg" src="../../assets/images/media/movie.mp4" autoplay loop playsinline
+            muted>
+        </video>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/65 z-20 pointer-events-none">
+        </div>
+
+        <div class="relative max-w-[1320px] mx-auto px-6 text-center z-30 w-full">
+            <div class="max-w-[800px] mx-auto flex flex-col items-center justify-center text-white">
+
+                <h1
+                    class="text-[2.2rem] sm:text-[2.8rem] md:text-[3.4rem] font-extrabold text-white leading-[1.15] mb-5 tracking-tight min-h-[70px] sm:min-h-[120px] md:min-h-[80px]">
+                    <span id="text-rotator"
+                        class="inline-block text-white transition-all duration-500 transform scale-100 opacity-100">
+                        Rapid Solutions
+                    </span>
+                </h1>
+
+                <p class="text-[18px] md:text-[22px] font-medium text-white/90 leading-[1.4] max-w-[650px] mx-auto">
+                    We are a digital agency specializing in web design, mobile development and seo optimization.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("hero-video");
+
+            // Trik jitu memaksa video play jika diblokir oleh browser Autoplay Policy
+            if (video) {
+                video.muted = true; // Pastikan muting bernilai true di level DOM objek
+
+                const playPromise = video.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        // Autoplay berhasil jalan murni
+                    }).catch(error => {
+                        console.log("Autoplay dicegah oleh browser, mencoba memicu ulang...");
+                        // Coba paksa play sekali lagi setelah interaksi kecil
+                        video.muted = true;
+                        video.play();
+                    });
+                }
+            }
+
+            // --- Logika Rotator Teks ---
+            const phrases = [
+                "Rapid Solutions",
+                "Innovative Thinking",
+                "Top-Notch Support"
+            ];
+
+            let currentIndex = 0;
+            const rotatorElement = document.getElementById("text-rotator");
+
+            setInterval(() => {
+                rotatorElement.classList.remove("scale-100", "opacity-100");
+                rotatorElement.classList.add("scale-95", "opacity-0");
+
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % phrases.length;
+                    rotatorElement.innerText = phrases[currentIndex];
+
+                    rotatorElement.classList.remove("scale-95", "opacity-0");
+                    rotatorElement.classList.add("scale-100", "opacity-100");
+                }, 500);
+            }, 4000);
+        });
+    </script>
+</body>
+
+</html>

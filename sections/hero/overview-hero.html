@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlapping Mockups Hero – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Trik jitu menghilangkan flickering: Sembunyikan elemen berkelas .raw-cue sebelum dianimasikan */
+        .raw-cue {
+            opacity: 0;
+            will-change: transform, opacity;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        cueSlideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        cueSlideLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        cueSlideRight: {
+                            '0%': { opacity: '0', transform: 'translateX(40px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        cueFadeInDown: {
+                            '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        'cue-up': 'cueSlideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+                        'cue-left': 'cueSlideLeft 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+                        'cue-right': 'cueSlideRight 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+                        'cue-fade-down': 'cueFadeInDown 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Overlapping Mockups Hero</span>
+    </div>
+
+    <section class="bg-[#e8f1fd] w-full text-center">
+        <div class="max-w-[1320px] mx-auto px-6 pt-12 pb-24 md:pt-16 md:pb-36">
+            <div class="row">
+                <div class="max-w-[720px] mx-auto mb-6">
+                    <h1 class="raw-cue text-[2.2rem] md:text-[3.2rem] font-extrabold text-[#343f52] tracking-tight leading-[1.15] mb-4"
+                        data-animation="animate-cue-fade-down" style="animation-delay: 100ms;">
+                        Staying on top of your bills never been this easy
+                    </h1>
+
+                    <p class="raw-cue text-[16px] md:text-[19px] font-semibold text-[#60697b] leading-[1.5] px-4 md:px-12 mb-7"
+                        data-animation="animate-cue-fade-down" style="animation-delay: 350ms;">
+                        Easily achieve your saving goals. Have all your recurring and one time expenses and incomes in
+                        one place.
+                    </p>
+
+                    <div class="raw-cue flex items-center justify-center gap-2" data-animation="animate-cue-up"
+                        style="animation-delay: 600ms;">
+                        <a href="#"
+                            class="inline-block bg-[#3f78e0] text-white font-bold text-[14px] px-6 py-3 rounded hover:bg-[#3565be] transition-all hover:-translate-y-[2px] shadow-md">
+                            Get Started
+                        </a>
+                        <a href="#"
+                            class="inline-block bg-[#45c4a0] text-white font-bold text-[14px] px-6 py-3 rounded hover:bg-[#39aa8a] transition-all hover:-translate-y-[2px] shadow-md">
+                            Free Trial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white w-full">
+        <div class="max-w-[1320px] mx-auto px-6 pb-14 md:pb-16 mb-12 lg:mb-20">
+            <div class="row">
+
+                <div id="heroImagesContainer" class="relative w-full max-w-[850px] mx-auto -mt-16 md:-mt-24 z-30">
+
+                    <div class="raw-cue w-full rounded-[0.5rem] overflow-hidden shadow-[0_1.5rem_4rem_rgba(30,34,40,0.12)] bg-gray-100"
+                        data-animation="animate-cue-up" style="animation-delay: 200ms;">
+                        <img class="w-full h-auto block" src="../../assets/images/photos/sa1.jpg"
+                            alt="Main Dashboard Showcase" />
+                    </div>
+
+                    <div class="raw-cue absolute rounded-[0.4rem] overflow-hidden shadow-[0_1rem_3rem_rgba(30,34,40,0.15)] bg-gray-100"
+                        data-animation="animate-cue-right"
+                        style="top: 20%; right: -8%; width: 30%; height: auto; animation-delay: 500ms;">
+                        <img class="w-full h-auto block" src="../../assets/images/photos/sa2.jpg"
+                            alt="Right Panel Metric" />
+                    </div>
+
+                    <div class="raw-cue absolute rounded-[0.4rem] overflow-hidden shadow-[0_1rem_3rem_rgba(30,34,40,0.15)] bg-gray-100"
+                        style="top: 10%; left: -8%; width: 30%; height: auto; animation-delay: 750ms;"
+                        data-animation="animate-cue-left">
+                        <img class="w-full h-auto block" src="../../assets/images/photos/sa3.jpg"
+                            alt="Top Left Notification Card" />
+                    </div>
+
+                    <div class="raw-cue absolute rounded-[0.4rem] overflow-hidden shadow-[0_1rem_3rem_rgba(30,34,40,0.15)] bg-gray-100"
+                        style="bottom: 10%; left: -10%; width: 30%; height: auto; animation-delay: 950ms;"
+                        data-animation="animate-cue-left">
+                        <img class="w-full h-auto block" src="../../assets/images/photos/sa4.jpg"
+                            alt="Bottom Left Graph Chart" />
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elementsToAnimate = document.querySelectorAll('.raw-cue');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        const animationClass = element.getAttribute('data-animation');
+
+                        // Jalankan class animasi Tailwind bawaan
+                        element.classList.add(animationClass);
+
+                        // Lepaskan observer agar animasi berjalan sekali saja
+                        observer.unobserve(element);
+                    }
+                });
+            }, {
+                threshold: 0.05,
+                rootMargin: "0px 0px -20px 0px"
+            });
+
+            elementsToAnimate.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>
