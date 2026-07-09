@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni Slider – Master Section Library</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        /* Override warna dot pagination Swiper agar konsisten dengan design system */
+        .swiper-pagination-bullet {
+            background: #adb5bd;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #3f78e0;
+        }
+    </style>
+</head>
+
+<body class="font-['Manrope',_sans-serif] bg-white antialiased">
+
+    <div class="bg-[#f0f3f9] border-b border-gray-200 px-6 py-3 flex items-center justify-between z-[100] relative">
+        <a href="../../index.html"
+            class="inline-flex items-center gap-2 text-[13px] font-semibold text-[#3f78e0] hover:underline">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back to Master Section Library
+        </a>
+        <span class="text-[13px] font-semibold text-[#343f52]">Testimoni Slider</span>
+    </div>
+
+    <section class="bg-[#fefefe]">
+        <div class="max-w-[1320px] mx-auto px-6 py-[3.5rem] md:py-[4rem]">
+            
+            <h2 class="text-[2rem] md:text-[2.3rem] font-extrabold text-[#343f52] mb-3 text-center tracking-tight">
+                Happy Customers
+            </h2>
+            <p class="text-[16px] md:text-[17px] font-medium text-[#60697b] leading-[1.65] text-center mb-10 max-w-[680px] mx-auto">
+                Customer satisfaction is our major goal. See what our customers are saying about us.
+            </p>
+            
+            <div class="relative px-2">
+                <div class="absolute rounded-full bg-[#fef6e0] w-16 h-16 bottom-2 -right-4 z-0 hidden sm:block"></div>
+                
+                <div class="absolute w-14 h-14 -top-4 -left-4 z-0 grid grid-cols-4 gap-1.5 opacity-30 hidden sm:grid">
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div><div class="w-1.5 h-1.5 rounded-full bg-[#3f78e0]"></div>
+                </div>
+
+                <div class="swiper testiSwiper pb-12 z-10 relative">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-[0.4rem] border border-gray-100 p-7 md:p-8 shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] h-full flex flex-col justify-between">
+                                <blockquote class="relative">
+                                    <p class="text-[15px] leading-[1.65] text-[#60697b] font-medium mb-6">
+                                        “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
+                                    </p>
+                                    <div class="flex items-center gap-4 mt-auto">
+                                        <img class="rounded-full w-12 h-12 object-cover" src="../../assets/images/avatars/te1.jpg" alt="Coriss Ambady" />
+                                        <div>
+                                            <h5 class="text-[15px] font-bold text-[#343f52] mb-0.5">Coriss Ambady</h5>
+                                            <p class="text-[13px] text-[#9499a3] font-medium mb-0">Financial Analyst</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-[0.4rem] border border-gray-100 p-7 md:p-8 shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] h-full flex flex-col justify-between">
+                                <blockquote class="relative">
+                                    <p class="text-[15px] leading-[1.65] text-[#60697b] font-medium mb-6">
+                                        “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
+                                    </p>
+                                    <div class="flex items-center gap-4 mt-auto">
+                                        <img class="rounded-full w-12 h-12 object-cover" src="../../assets/images/avatars/te2.jpg" alt="Cory Zamora" />
+                                        <div>
+                                            <h5 class="text-[15px] font-bold text-[#343f52] mb-0.5">Cory Zamora</h5>
+                                            <p class="text-[13px] text-[#9499a3] font-medium mb-0">Marketing Specialist</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-[0.4rem] border border-gray-100 p-7 md:p-8 shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] h-full flex flex-col justify-between">
+                                <blockquote class="relative">
+                                    <p class="text-[15px] leading-[1.65] text-[#60697b] font-medium mb-6">
+                                        “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
+                                    </p>
+                                    <div class="flex items-center gap-4 mt-auto">
+                                        <img class="rounded-full w-12 h-12 object-cover" src="../../assets/images/avatars/te3.jpg" alt="Nikolas Brooten" />
+                                        <div>
+                                            <h5 class="text-[15px] font-bold text-[#343f52] mb-0.5">Nikolas Brooten</h5>
+                                            <p class="text-[13px] text-[#9499a3] font-medium mb-0">Sales Manager</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-[0.4rem] border border-gray-100 p-7 md:p-8 shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] h-full flex flex-col justify-between">
+                                <blockquote class="relative">
+                                    <p class="text-[15px] leading-[1.65] text-[#60697b] font-medium mb-6">
+                                        “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
+                                    </p>
+                                    <div class="flex items-center gap-4 mt-auto">
+                                        <img class="rounded-full w-12 h-12 object-cover" src="../../assets/images/avatars/te4.jpg" alt="Coriss Ambady" />
+                                        <div>
+                                            <h5 class="text-[15px] font-bold text-[#343f52] mb-0.5">Coriss Ambady</h5>
+                                            <p class="text-[13px] text-[#9499a3] font-medium mb-0">Financial Analyst</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-[0.4rem] border border-gray-100 p-7 md:p-8 shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] h-full flex flex-col justify-between">
+                                <blockquote class="relative">
+                                    <p class="text-[15px] leading-[1.65] text-[#60697b] font-medium mb-6">
+                                        “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
+                                    </p>
+                                    <div class="flex items-center gap-4 mt-auto">
+                                        <img class="rounded-full w-12 h-12 object-cover" src="../../assets/images/avatars/te5.jpg" alt="Jackie Sanders" />
+                                        <div>
+                                            <h5 class="text-[15px] font-bold text-[#343f52] mb-0.5">Jackie Sanders</h5>
+                                            <p class="text-[13px] text-[#9499a3] font-medium mb-0">Investment Planner</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide h-auto">
+                            <div class="bg-white rounded-[0.4rem] border border-gray-100 p-7 md:p-8 shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] h-full flex flex-col justify-between">
+                                <blockquote class="relative">
+                                    <p class="text-[15px] leading-[1.65] text-[#60697b] font-medium mb-6">
+                                        “Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper. Cras justo odio dapibus facilisis sociis natoque penatibus.”
+                                    </p>
+                                    <div class="flex items-center gap-4 mt-auto">
+                                        <img class="rounded-full w-12 h-12 object-cover" src="../../assets/images/avatars/te6.jpg" alt="Laura Widerski" />
+                                        <div>
+                                            <h5 class="text-[15px] font-bold text-[#343f52] mb-0.5">Laura Widerski</h5>
+                                            <p class="text-[13px] text-[#9499a3] font-medium mb-0">Sales Specialist</p>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".testiSwiper", {
+            loop: true,
+            spaceBetween: 28,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1200: { slidesPerView: 3 },
+            }
+        });
+    </script>
+
+</body>
+
+</html>
